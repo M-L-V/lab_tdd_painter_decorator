@@ -18,7 +18,11 @@ describe('Room', function(){
     assert.deepStrictEqual(actual, 0);    //assert //use an x before it to prevent test from running
   });
 
-
+  it('should be able to be painted', function(){
+    room.paintRoom(10);
+    const actual = room.paintedArea;
+    assert.strictEqual(actual, 10)
+  });
 
 
 

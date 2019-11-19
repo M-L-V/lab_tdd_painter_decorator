@@ -1,7 +1,15 @@
 const Room = function(areaInMeters, paintedArea) {
   this.areaInMeters = areaInMeters;
-  this.paintedArea = 0;
+  this.paintedArea = paintedArea;
 }
+
+
+
+
+Room.prototype.paintRoom = function(paintAmount) {
+  this.paintedArea = paintAmount * 1;
+  return this.paintedArea
+};
 
 
 
